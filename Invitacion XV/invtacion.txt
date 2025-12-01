@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación XV Años</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    background-image: url('01.jpg'); /* ← Fondo floral completo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contenedor general para cada página */
+.flower-bg {
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Tarjeta principal */
+.page {
+    width: 90%;
+    max-width: 400px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px double #9bd5f5;  /* Marco azul cielo */
+    border-radius: 30px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 22px rgba(155,213,245,0.6), 0 8px 30px rgba(0,0,0,0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Borde interior dorado ultra fino */
+.page::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    border: 2px solid rgba(255, 215, 0, 0.85);
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+/* Líneas decorativas doradas en esquinas */
+.page::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(135deg, gold 0%, transparent 40%) top left,
+        linear-gradient(225deg, gold 0%, transparent 40%) top right,
+        linear-gradient(45deg, gold 0%, transparent 40%) bottom left,
+        linear-gradient(315deg, gold 0%, transparent 40%) bottom right;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    opacity: 0.55;
+}
+
+/* Foto de Alexia con marco azul cielo */
+.foto-marco {
+    width: 85%;
+    max-width: 380px;
+    aspect-ratio: 3/4;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Marco floral opcional sobre la foto */
+.foto-marco img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Título cursivo */
+.titulo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #3b3b3b;
+    font-weight: bold;
+    line-height: 1.2;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Segunda página */
+.pagina2 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.9rem;
+    line-height: 1.5;
+    padding: 15px;
+    color: #333;
+}
+
+.nombres {
+    margin-top: 25px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #3a3a3a;
+}
+
+/* Botones normales */
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    width: 80%;
+    max-width: 350px;
+}
+
+.btn {
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #87CEEB, #a7d8f7);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #6bbad8, #8fc9eb);
+    transform: scale(1.03);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- PÁGINA 1 -->
+<div class="flower-bg">
+    <div class="page">
+
+        <!-- FOTO DE ALEXIA -->
+        <div class="foto-marco" style="background-image: url('ale.jpeg');">
+            <!-- Aquí puedes poner el marco floral sobre la foto -->
+            <!-- <img src="marco.png" alt="Marco floral"> -->
+        </div>
+
+        <div class="titulo">
+            Mis XV Años <br>
+            Alexia Giovanna Solis Castillo
+        </div>
+
+    </div>
+</div>
+
+<!-- PÁGINA 2 -->
+<div class="flower-bg">
+    <div class="page pagina2">
+
+        <p>
+            “Un día tan especial merece ser compartido con  
+            quienes llenan mi vida de alegría y hermosos recuerdos.”
+        </p>
+
+        <div class="nombres">
+            Con cariño de mis padres:<br>
+            Cristia Giovanny Solis López<br>
+            María Soledad López Calderón<br><br>
+            Y de mi Madrina:<br>
+            Estela Guadalupe Solis López
+        </div>
+
+        <div class="botones">
+            <a href="https://www.google.com/maps/place/Parroquia+de+San+Mart%C3%ADn+de+Porres/@19.3681373,-98.9778749,1077m/data=!3m2!1e3!4b1!4m6!3m5!1s0x85d1e28c8ef54329:0xd735aad8d87b3d7!8m2!3d19.3681323!4d-98.9753!16s%2Fg%2F11bwpnt2_d?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" class="btn">Iglesia</a>
+            <a href="https://www.google.com/maps/place/Auditorio+Ejidal+Atlapulco+Ciudad+Nezahualcoyotl/@19.3834737,-98.9808307,1077m/data=!3m2!1e3!4b1!4m6!3m5!1s0x85d1e3cc27c12af7:0x23b796dd319f0b48!8m2!3d19.3834687!4d-98.9782558!16s%2Fg%2F11h0zfz_pv?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" class="btn">Recepcion</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
